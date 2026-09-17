@@ -1,0 +1,31 @@
+# Define the project metadata.
+[project]
+
+# Define the project name.
+name = "phase3-rag"
+
+# Define the current project version.
+version = "0.1.0"
+
+# Define the project description.
+description = "Direct Python RAG implementation for AI Engineering Phase 3"
+
+# Define the supported Python version.
+requires-python = ">=3.11"
+
+# Define the project's runtime dependencies.
+dependencies = [
+    "pymupdf",
+    "faiss-cpu",
+    "numpy",
+    "transformers",
+    "sentence-transformers",
+    "openai",
+]
+
+
+# Define the source-code layout.
+[tool.setuptools.packages.find]
+
+# Tell setuptools that application code lives under src.
+where = ["src"]
